@@ -101,25 +101,25 @@ Have a look around…</p>
   		<ul class="list-inline social-buttons">
   		
   		  <li class="list-inline-item">
-  			<a href="https://linkedin.com/in/nikhil-das2">
+  			<a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/nikhil-das2">
   			  <i class="fab fa-linkedin-in"></i>
   			</a>
   		  </li>
   		
   		  <li class="list-inline-item">
-  			<a href="https://github.com/nkd29">
+  			<a target="_blank" rel="noopener noreferrer" href="https://github.com/nkd29">
   			  <i class="fab fa-github"></i>
   			</a>
   		  </li>
   		
   		  <li class="list-inline-item">
-  			<a href="https://nikhil-d.medium.com/">
+  			<a target="_blank" rel="noopener noreferrer" href="https://nikhil-d.medium.com/">
   			  <i class="fab fa-medium"></i>
   			</a>
   		  </li>
   		
   		  <li class="list-inline-item">
-  			<a href="mailto:nikd29@gmail.com">
+  			<a target="_blank" rel="noopener noreferrer" href="mailto:nikd29@gmail.com">
   			  <i class="far fa-paper-plane"></i>
   			</a>
   		  </li>
@@ -273,7 +273,7 @@ Have a look around…</p>
 
 <h4 id="overview">Overview</h4>
 
-<p>Originally published <a href="https://bit.ly/2UO1P9y"><em>here</em></a> in <a href="https://towardsdatascience.com/"><em>Towards Data Science</em></a>, I set out to on a project to investigate kelp forests in California using publicly available Landsat satellite data. Kelp forests in California have been in decline along the California coastline, with bull kelp [<a href="https://en.wikipedia.org/wiki/Nereocystis"><em>Nereocystis luetkeana</em></a>] being especially sensitive to both climate change and an overabundance of sea urchins due to the 2013 sea star wasting disease [1]. Climate change is thought to be partially responsible for the degradation of these kelp forests but to what degree is still unknown. Researchers observed a period of persistent kelp loss from 2014–2019 along Northern California, and various West Coast institutions are investigating methods to enhance kelp monitoring efforts [3]. The purpose of this article is to investigate a subset of coastline thought to be affected, with publicly accessible tools and data.</p>
+<p>Originally published <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/2UO1P9y"><em>here</em></a> in <a target="_blank" rel="noopener noreferrer" href="https://towardsdatascience.com/"><em>Towards Data Science</em></a>, I set out to on a project to investigate kelp forests in California using publicly available Landsat satellite data. Kelp forests in California have been in decline along the California coastline, with bull kelp [<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Nereocystis"><em>Nereocystis luetkeana</em></a>] being especially sensitive to both climate change and an overabundance of sea urchins due to the 2013 sea star wasting disease [1]. Climate change is thought to be partially responsible for the degradation of these kelp forests but to what degree is still unknown. Researchers observed a period of persistent kelp loss from 2014–2019 along Northern California, and various West Coast institutions are investigating methods to enhance kelp monitoring efforts [3]. The purpose of this article is to investigate a subset of coastline thought to be affected, with publicly accessible tools and data.</p>
 
 <h4 id="final-webmap">Final Webmap</h4>
 
@@ -288,23 +288,23 @@ Have a look around…</p>
 
 <h4 id="background">Background</h4>
 
-<p>Kelp forests in California have been in decline along the California coastline, with bull kelp [<a href="https://en.wikipedia.org/wiki/Nereocystis"><em>Nereocystis luetkeana</em></a>] being especially sensitive to both climate change and an overabundance of sea urchins due to the 2013 sea star wasting disease [1]. Climate change is thought to be partially responsible for the degradation of these kelp forests but to what degree is still unknown. Researchers observed a period of persistent kelp loss from 2014–2019 along Northern California, and various West Coast institutions are investigating methods to enhance kelp monitoring efforts [3]. The purpose of this article is to investigate a subset of coastline thought to be affected, with publicly accessible tools and data.</p>
+<p>Kelp forests in California have been in decline along the California coastline, with bull kelp [<a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Nereocystis"><em>Nereocystis luetkeana</em></a>] being especially sensitive to both climate change and an overabundance of sea urchins due to the 2013 sea star wasting disease [1]. Climate change is thought to be partially responsible for the degradation of these kelp forests but to what degree is still unknown. Researchers observed a period of persistent kelp loss from 2014–2019 along Northern California, and various West Coast institutions are investigating methods to enhance kelp monitoring efforts [3]. The purpose of this article is to investigate a subset of coastline thought to be affected, with publicly accessible tools and data.</p>
 
 <p>As a former aerospace engineer, nature lover and overall data geek, I have been increasingly interested in the ways we can streamline access to scientific data for the environment, for both professionals and enthusiasts alike, while spreading a message I find deeply important; our world is changing and our tools are advancing, but how we use those tools will greatly determine our future on this planet.</p>
 
 <p>Using ArcMap 10.7 software, this project explores the uses of publicly available satellite imagery to monitor changes in these kelp forests, which act as important habitats and nurseries for a variety of marine species. In addition to sea star wasting disease, the loss of predatory sea otters to feed on urchin populations could further affect the ecosystem balance, due to the loss of this apex predator. Additionally, large marine heat wave events have been observed during those years, adding to the list of stressors facing bull kelp forests.</p>
 
-<p>For more background on the Landsat 8 satellite program, see <a href="https://www.usgs.gov/core-science-systems/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con">here</a>. Some knowledge of geospatial analysis and remote sensing is helpful for reading this article, and resources are widely available online.</p>
+<p>For more background on the Landsat 8 satellite program, see <a target="_blank" rel="noopener noreferrer" href="https://www.usgs.gov/core-science-systems/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con">here</a>. Some knowledge of geospatial analysis and remote sensing is helpful for reading this article, and resources are widely available online.</p>
 
 <p>Ok. Let’s get started…</p>
 
 <h4 id="terminology">Terminology</h4>
 
-<p>A few background terms are listed below, but a general familiarity with geospatial information systems (GIS) is useful for understanding the work in this article. A quick overview can be found <a href="https://youtu.be/LHDCRjAxpI0">here</a>, and elsewhere on the web.</p>
+<p>A few background terms are listed below, but a general familiarity with geospatial information systems (GIS) is useful for understanding the work in this article. A quick overview can be found <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/LHDCRjAxpI0">here</a>, and elsewhere on the web.</p>
 
 <p><strong>Buffer</strong> — In geographic information systems and spatial analysis, buffer analysis is the determination of a zone around a geographic feature containing locations that are within a specified distance of that feature, the buffer zone</p>
 
-<p><strong>Landsat</strong> — a joint USGS/NASA scientific satellite that studies and photographs the earth’s surface by using remote-sensing techniques. For background and resources on the Landsat 8 satellite program, see <a href="https://www.usgs.gov/core-science-systems/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con">this overview</a> from the USGS.</p>
+<p><strong>Landsat</strong> — a joint USGS/NASA scientific satellite that studies and photographs the earth’s surface by using remote-sensing techniques. For background and resources on the Landsat 8 satellite program, see <a target="_blank" rel="noopener noreferrer" href="https://www.usgs.gov/core-science-systems/nli/landsat/landsat-8?qt-science_support_page_related_con=0#qt-science_support_page_related_con">this overview</a> from the USGS.</p>
 
 <p><strong>RGB</strong> — RGB (red, green, and blue) refers to a system for representing the colors to be used on a computer display. Red, green, and blue can be combined in various proportions to obtain any color in the visible spectrum</p>
 
@@ -318,7 +318,7 @@ Have a look around…</p>
 
 <h4 id="setup">Setup</h4>
 
-<p>For this analysis, Landsat 8 images for the peak kelp months of September thru November from 2015–2019 were retrieved from the USGS <a href="https://earthexplorer.usgs.gov/">Earth Explorer</a> (See <a href="https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-modis/get-data-earth-explorer/">this guide</a> on retrieving Landsat Imagery, and <a href="https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites?qt-news_science_products=0">this guide</a> for raster band definitions for Landsat 8). During this timeframe, persistent kelp loss has been widely observed, following a severe kelp loss event in 2014 along Northern California, and the hope is to explore a subset of this region in detail. Scenes from <a href="https://www.usna.edu/Users/oceano/pguth/md_help/html/landsat_path_row.html#:~:text=Landsat%20satellites%20image%20the%20entire,of%20a%20frame%20of%20imagery.">Path 45/Row 33</a>, were used at each date, as seen in red below.</p>
+<p>For this analysis, Landsat 8 images for the peak kelp months of September thru November from 2015–2019 were retrieved from the USGS <a target="_blank" rel="noopener noreferrer" href="https://earthexplorer.usgs.gov/">Earth Explorer</a> (See <a target="_blank" rel="noopener noreferrer" href="https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-modis/get-data-earth-explorer/">this guide</a> on retrieving Landsat Imagery, and <a target="_blank" rel="noopener noreferrer" href="https://www.usgs.gov/faqs/what-are-band-designations-landsat-satellites?qt-news_science_products=0">this guide</a> for raster band definitions for Landsat 8). During this timeframe, persistent kelp loss has been widely observed, following a severe kelp loss event in 2014 along Northern California, and the hope is to explore a subset of this region in detail. Scenes from <a target="_blank" rel="noopener noreferrer" href="https://www.usna.edu/Users/oceano/pguth/md_help/html/landsat_path_row.html#:~:text=Landsat%20satellites%20image%20the%20entire,of%20a%20frame%20of%20imagery.">Path 45/Row 33</a>, were used at each date, as seen in red below.</p>
 
 <center><p><img alt="" class="la tw ei ev er fa v c" width="700" height="607" role="presentation" src="https://miro.medium.com/max/839/0*Ous8JBfb2ZngTypC.png" srcset="https://miro.medium.com/max/331/0*Ous8JBfb2ZngTypC.png 276w, https://miro.medium.com/max/661/0*Ous8JBfb2ZngTypC.png 552w, https://miro.medium.com/max/767/0*Ous8JBfb2ZngTypC.png 640w, https://miro.medium.com/max/839/0*Ous8JBfb2ZngTypC.png 700w" sizes="700px" /></p>
 
@@ -326,7 +326,7 @@ Have a look around…</p>
 
 <p>I chose this region because it was confined to one Landsat ‘scene’ from a single Landsat program, that primarily contained bull kelp [2]. Staying within one program, Landsat 8, eliminated the need to compare imagery across programs, which presents its own challenges. Landsat 8 was launched in 2013, but as of the writing of this article, there are plans for Landsat 9 to be launched late September 2021, that will provide continuous earth imaging in the coming years.</p>
 
-<p>Historically, bull kelp has been more sensitive to <a href="https://simple.wikipedia.org/wiki/Urchin_barren">urchin barrens</a> and climate change due to its seasonal growth nature. Data over the peak kelp growth period — September thru November — was averaged to characterize kelp quantity for a particular year. Four files for each date, and three dates per year led to 60 files in total. They were chosen based on low cloud cover and follow the format listed below in Table 1.</p>
+<p>Historically, bull kelp has been more sensitive to <a target="_blank" rel="noopener noreferrer" href="https://simple.wikipedia.org/wiki/Urchin_barren">urchin barrens</a> and climate change due to its seasonal growth nature. Data over the peak kelp growth period — September thru November — was averaged to characterize kelp quantity for a particular year. Four files for each date, and three dates per year led to 60 files in total. They were chosen based on low cloud cover and follow the format listed below in Table 1.</p>
 
 <center><p><img alt="" class="la tw ei ev er fa v c" width="560" height="62" role="presentation" src="https://miro.medium.com/max/671/0*2St8PzStSX602a5r.png" srcset="https://miro.medium.com/max/331/0*2St8PzStSX602a5r.png 276w, https://miro.medium.com/max/661/0*2St8PzStSX602a5r.png 552w, https://miro.medium.com/max/671/0*2St8PzStSX602a5r.png 560w" sizes="560px" /></p>
 
@@ -338,7 +338,7 @@ Have a look around…</p>
 
 <h4 id="methods">Methods</h4>
 
-<p>For simplicity, a <a href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">Normalized Difference Vegetation Index</a> (NDVI) was used to detect bull kelp locations. I explored other kelp classification methods, and some relevant research papers on those methods are listed at the end for further reading.</p>
+<p>For simplicity, a <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Normalized_difference_vegetation_index">Normalized Difference Vegetation Index</a> (NDVI) was used to detect bull kelp locations. I explored other kelp classification methods, and some relevant research papers on those methods are listed at the end for further reading.</p>
 
 <p>The NDVI for Landsat 8 imagery, is typically used in farmland and terrestrial vegetation, and is derived from the visible Red band (Band 4) and the Near-Infrared (NIR, Band 5) in the following formula:</p>
 
@@ -380,11 +380,11 @@ Have a look around…</p>
 
 <p>Another limitation is both the spatial (image pixel area) and temporal (time) resolution. Landsat 8 image data is captured every 16 days at a 30m resolution, meaning each pixel stands for a 30m x 30m area on the ground. As expected, bull kelp vegetation was hard to capture at this resolution, and it may not be suited to this task.</p>
 
-<p>Sentinel-2A, on the other hand, has higher resolution imagery (up to 10m). Launched in 2015, Sentinel data may provide better images to estimate these types of changes as time goes on and more data is captured. Some differences between the two satellite’s image bands are <a href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-sentinel-2-comparison-sentinel-2-and-landsat?qt-science_center_objects=0#qt-science_center_objects">summarized here</a>, however, this data was difficult to obtain for the region and dates of study, and will need to be further explored. Higher resolution imagery is available from private institutions, such as Planet Lab’s PlanetScope satellites (up to 3m), and are being investigated as an alternative.</p>
+<p>Sentinel-2A, on the other hand, has higher resolution imagery (up to 10m). Launched in 2015, Sentinel data may provide better images to estimate these types of changes as time goes on and more data is captured. Some differences between the two satellite’s image bands are <a target="_blank" rel="noopener noreferrer" href="https://www.usgs.gov/centers/eros/science/usgs-eros-archive-sentinel-2-comparison-sentinel-2-and-landsat?qt-science_center_objects=0#qt-science_center_objects">summarized here</a>, however, this data was difficult to obtain for the region and dates of study, and will need to be further explored. Higher resolution imagery is available from private institutions, such as Planet Lab’s PlanetScope satellites (up to 3m), and are being investigated as an alternative.</p>
 
 <center><p><img alt="" class="la tw ei ev er fa v c" width="700" height="525" role="presentation" src="https://miro.medium.com/max/839/0*MZ2Gax0KL7psmvAo.jpg" srcset="https://miro.medium.com/max/331/0*MZ2Gax0KL7psmvAo.jpg 276w, https://miro.medium.com/max/661/0*MZ2Gax0KL7psmvAo.jpg 552w, https://miro.medium.com/max/767/0*MZ2Gax0KL7psmvAo.jpg 640w, https://miro.medium.com/max/839/0*MZ2Gax0KL7psmvAo.jpg 700w" sizes="700px" /></p>
 
-<p>Figure 6: A purple urchin barren in California. Photo courtesy of the <a href="https://noyocenter.org/help-the-kelp/">Noyo Center</a> in Fort Bragg, CA</p></center>
+<p>Figure 6: A purple urchin barren in California. Photo courtesy of the <a target="_blank" rel="noopener noreferrer" href="https://noyocenter.org/help-the-kelp/">Noyo Center</a> in Fort Bragg, CA</p></center>
 
 <p>As mentioned earlier, there are many methodologies besides NDVI under current study at West Coast institutions, and are well summarized and tabulated in [3]. These include but are not limited to the Floating Algae Index (FAI), Scaled Algae Index (SAI), Multiple Endmember Spectral Mixing Analysis (MESMA), and Normalized Difference Algae Index (NDAI), and were outside the scope of this initial exploration.</p>
 
@@ -406,7 +406,7 @@ Have a look around…</p>
 
 <p>2. Other factors may also influence amount of detectible kelp, such as kelp length in water column, tidal height, turbidity/currents, bathymetry, and general water conditions.</p>
 
-<p>3. Yearly weather anomalies (el Nino, high drought years, marine heatwaves) can also affect results. NOAA’s high-resolution sea surface temperature (SST) data set is available <a href="https://www.esrl.noaa.gov/psd/data/gridded/data.noaa.oisst.v2.highres.html">here</a>.</p>
+<p>3. Yearly weather anomalies (el Nino, high drought years, marine heatwaves) can also affect results. NOAA’s high-resolution sea surface temperature (SST) data set is available <a target="_blank" rel="noopener noreferrer" href="https://www.esrl.noaa.gov/psd/data/gridded/data.noaa.oisst.v2.highres.html">here</a>.</p>
 
 <p>4. Variability in the time of sensor images taken, can influence reflected light captured.</p>
 
@@ -426,13 +426,13 @@ Have a look around…</p>
 
 <p>From a public facing standpoint, engaging the public on kelp is always a challenge for those who don’t live near the coasts or spend time in the ocean. Beach cleanups, group snorkel tours through kelp forests, or coastal hikes are just a few of the ways to help engage the public and raise community awareness.</p>
 
-<p>Continuing to grow and foster partnerships between research institutions, non-profits and the community will be vital in monitoring our kelp forests. One such example already underway is the <a href="https://farallones.org/climate/kelp/">Greater Farallones Kelp Recovery Program</a>, a joint program between the Greater Farallones Association, The Nature Conservancy, and other organizations, aimed at protecting and restoring kelp forests along the northern California coastline.</p>
+<p>Continuing to grow and foster partnerships between research institutions, non-profits and the community will be vital in monitoring our kelp forests. One such example already underway is the <a target="_blank" rel="noopener noreferrer" href="https://farallones.org/climate/kelp/">Greater Farallones Kelp Recovery Program</a>, a joint program between the Greater Farallones Association, The Nature Conservancy, and other organizations, aimed at protecting and restoring kelp forests along the northern California coastline.</p>
 
 <center><p><img alt="" class="la tw ei ev er fa v c" width="700" height="467" role="presentation" src="https://miro.medium.com/max/839/0*PYfM1GvPnuuFiaRv" srcset="https://miro.medium.com/max/331/0*PYfM1GvPnuuFiaRv 276w, https://miro.medium.com/max/661/0*PYfM1GvPnuuFiaRv 552w, https://miro.medium.com/max/767/0*PYfM1GvPnuuFiaRv 640w, https://miro.medium.com/max/839/0*PYfM1GvPnuuFiaRv 700w" sizes="700px" /></p>
 
-<p>Figure 8: The Point Arena Lighthouse at the north end of study area. Photo by <a href="https://unsplash.com/@mrbrunowolff?utm_source=medium&amp;utm_medium=referral">Bruno Wolff</a></p></center>
+<p>Figure 8: The Point Arena Lighthouse at the north end of study area. Photo by <a target="_blank" rel="noopener noreferrer" href="https://unsplash.com/@mrbrunowolff?utm_source=medium&amp;utm_medium=referral">Bruno Wolff</a></p></center>
 
-<p>As mentioned earlier, the <a href="https://kelp.codefornature.org/">KelpWatch</a> project [4] has a map that gives a great overview of the kelp decline over the past few decades, and is a useful tool for the public to see kelp decline dating back to 1984. This map can serve as an example of ways to display scientific data to the public regarding climate change impacts over time, and can be applied to any ecosystem or species.</p>
+<p>As mentioned earlier, the <a target="_blank" rel="noopener noreferrer" href="https://kelp.codefornature.org/">KelpWatch</a> project [4] has a map that gives a great overview of the kelp decline over the past few decades, and is a useful tool for the public to see kelp decline dating back to 1984. This map can serve as an example of ways to display scientific data to the public regarding climate change impacts over time, and can be applied to any ecosystem or species.</p>
 
 <p>Finally, engaging students or enthusiasts to play with spatial analysis tools through free online workshops or training, by highlighting conventionally ‘popular’ topics, could help to engage more of the public. This could include whale and shark migration, invasive lionfish tracking, global coral spawning events to name a few. For geospatial analysis the possibilities are endless!</p>
 
@@ -440,17 +440,17 @@ Have a look around…</p>
 
 <h4 id="references-for-further-study">References for Further Study</h4>
 
-<p>[1] The Marine Detective. “Sea Star Wasting Syndrome Now Documented on NE Vancouver Island.” <a href="http://themarinedetective.com/2013/12/21/sea-star-wasting-syndrome-now-documented-on-ne-vancouver-island/">http://themarinedetective.com/2013/12/21/sea-star-wasting-syndrome-now-documented-on-ne-vancouver-island/</a>.</p>
+<p>[1] The Marine Detective. “Sea Star Wasting Syndrome Now Documented on NE Vancouver Island.” <a target="_blank" rel="noopener noreferrer" href="http://themarinedetective.com/2013/12/21/sea-star-wasting-syndrome-now-documented-on-ne-vancouver-island/">http://themarinedetective.com/2013/12/21/sea-star-wasting-syndrome-now-documented-on-ne-vancouver-island/</a>.</p>
 
-<p>[2] Dennis J.I. Finger, Meredith L. McPherson, Henry F. Houskeeper, Raphael M. Kudela, 2021. “Mapping bull kelp canopy in northern California using Landsat to enable long-term monitoring”. <a href="https://doi.org/10.1016/j.rse.2020.112243">https://doi.org/10.1016/j.rse.2020.112243</a>.</p>
+<p>[2] Dennis J.I. Finger, Meredith L. McPherson, Henry F. Houskeeper, Raphael M. Kudela, 2021. “Mapping bull kelp canopy in northern California using Landsat to enable long-term monitoring”. <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.rse.2020.112243">https://doi.org/10.1016/j.rse.2020.112243</a>.</p>
 
-<p>[3] Sarah B. Schroeder a, Colleen Dupont, Leanna Boyer, Francis Juanes , 2019. “Passive remote sensing technology for mapping bull kelp (<em>Nereocystis</em> <em>luetkeana</em>)”: A review of techniques and regional case study. <a href="https://doi.org/10.1016/j.%20gecco.2019.e00683">https://doi.org/10.1016/j. gecco.2019.e00683</a>.</p>
+<p>[3] Sarah B. Schroeder a, Colleen Dupont, Leanna Boyer, Francis Juanes , 2019. “Passive remote sensing technology for mapping bull kelp (<em>Nereocystis</em> <em>luetkeana</em>)”: A review of techniques and regional case study. <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.%20gecco.2019.e00683">https://doi.org/10.1016/j. gecco.2019.e00683</a>.</p>
 
-<p>[4] Kelpwatch 2021. <a href="https://kelp.codefornature.org/">https://kelp.codefornature.org/</a>.</p>
+<p>[4] Kelpwatch 2021. <a target="_blank" rel="noopener noreferrer" href="https://kelp.codefornature.org/">https://kelp.codefornature.org/</a>.</p>
 
-<p>[5] Dierssen, H.M., Chlus, A., Russell, B., 2015. “Hyperspectral discrimination of floating mats of seagrass wrack and the macroalgae Sargassum in coastal waters of Greater Florida Bay using airborne remote sensing”. Remote Sens. Environ. 167, 247e258. <a href="https://doi.org/10.1016/j.rse.2015.01.027">https://doi.org/10.1016/j.rse.2015.01.027</a>.</p>
+<p>[5] Dierssen, H.M., Chlus, A., Russell, B., 2015. “Hyperspectral discrimination of floating mats of seagrass wrack and the macroalgae Sargassum in coastal waters of Greater Florida Bay using airborne remote sensing”. Remote Sens. Environ. 167, 247e258. <a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.1016/j.rse.2015.01.027">https://doi.org/10.1016/j.rse.2015.01.027</a>.</p>
 
-<p>[6] Hamilton, S. L., Bell, T. W., Watson, J. R., Grorud‐Colvert, K. A., &amp; Menge, B. A. (2020). “Remote sensing: generation of long‐term kelp bed data sets for evaluation of impacts of climatic variation”. Ecology, e03031. <a href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3031">https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3031</a>.</p>
+<p>[6] Hamilton, S. L., Bell, T. W., Watson, J. R., Grorud‐Colvert, K. A., &amp; Menge, B. A. (2020). “Remote sensing: generation of long‐term kelp bed data sets for evaluation of impacts of climatic variation”. Ecology, e03031. <a target="_blank" rel="noopener noreferrer" href="https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3031">https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3031</a>.</p>
 
 </p>
               <center><button
@@ -579,7 +579,7 @@ Steps:
               />
               <p><h4 id="overview">Overview</h4>
 
-<p>I <a href="https://rpubs.com/indiandas/833091">developed this tool</a>, to monitor shark fishing across California for <a href="https://sharkstewards.org/">Shark Stewards</a>, a non-profit dedicated to the conservation of sharks. Harnessing the power of web scraping in Python and data visualization in R Leaflet and Flexdashboard packages, I summarize findings into an interactive dashboard.</p>
+<p>I <a target="_blank" rel="noopener noreferrer" href="https://rpubs.com/indiandas/833091" >developed this tool</a>, to monitor shark fishing across California for <a target="_blank" rel="noopener noreferrer" href="https://sharkstewards.org/">Shark Stewards</a>, a non-profit dedicated to the conservation of sharks. Harnessing the power of web scraping in Python and data visualization in R Leaflet and Flexdashboard packages, I summarize findings into an interactive dashboard.</p>
 
 <!---
 {:.list-inline}
@@ -1042,25 +1042,25 @@ Steps:
 		<ul class="list-inline social-buttons">
 		
 		  <li class="list-inline-item">
-			<a href="https://linkedin.com/in/nikhil-das2">
+			<a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/nikhil-das2">
 			  <i class="fab fa-linkedin-in"></i>
 			</a>
 		  </li>
 		
 		  <li class="list-inline-item">
-			<a href="https://github.com/nkd29">
+			<a target="_blank" rel="noopener noreferrer" href="https://github.com/nkd29">
 			  <i class="fab fa-github"></i>
 			</a>
 		  </li>
 		
 		  <li class="list-inline-item">
-			<a href="https://nikhil-d.medium.com/">
+			<a target="_blank" rel="noopener noreferrer" href="https://nikhil-d.medium.com/">
 			  <i class="fab fa-medium"></i>
 			</a>
 		  </li>
 		
 		  <li class="list-inline-item">
-			<a href="mailto:nikd29@gmail.com">
+			<a target="_blank" rel="noopener noreferrer" href="mailto:nikd29@gmail.com">
 			  <i class="far fa-paper-plane"></i>
 			</a>
 		  </li>
@@ -1173,7 +1173,7 @@ Steps:
           
           <li class="list-inline-item">
             
-            <a href="https://linkedin.com/in/nikhil-das2">
+            <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/nikhil-das2">
               <i class="fab fa-linkedin-in"></i>
             </a>
             
@@ -1181,7 +1181,7 @@ Steps:
           
           <li class="list-inline-item">
             
-            <a href="https://github.com/nkd29">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/nkd29">
               <i class="fab fa-github"></i>
             </a>
             
@@ -1189,7 +1189,7 @@ Steps:
           
           <li class="list-inline-item">
             
-            <a href="https://nikhil-d.medium.com/">
+            <a target="_blank" rel="noopener noreferrer" href="https://nikhil-d.medium.com/">
               <i class="fab fa-medium"></i>
             </a>
             
@@ -1197,7 +1197,7 @@ Steps:
           
           <li class="list-inline-item">
             
-            <a href="mailto:nikd29@gmail.com">
+            <a target="_blank" rel="noopener noreferrer" href="mailto:nikd29@gmail.com">
               <i class="far fa-paper-plane"></i>
             </a>
             
@@ -1209,7 +1209,7 @@ Steps:
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
-            <a href="legal"
+            <a target="_blank" rel="noopener noreferrer" href="legal"
               >Privacy Policy</a
             >
           </li>
